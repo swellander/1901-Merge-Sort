@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "allowJs": false,
+    "outDir": "js",
+    "allowSyntheticDefaultImports": true,
+    "listEmittedFiles": true,
+    "moduleResolution": "node",
+    "lib": [ "es2015", "dom" ],
+    "preserveConstEnums": true,
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "*": [
+        "*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
