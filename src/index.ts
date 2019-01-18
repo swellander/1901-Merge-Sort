@@ -7,9 +7,7 @@ const merge: Merge = (left, right) => {
     else mergedNumbers.push(right.shift());
   }
 
-  const mergedResult = mergedNumbers.concat(left).concat(right);
-
-  return mergedResult;
+  return mergedNumbers.concat(left).concat(right);
 };
 
 type Split = (numbers: number[]) => { left: number[]; right: number[] };

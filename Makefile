@@ -10,7 +10,7 @@ build:
 	./node_modules/.bin/tsc
 
 build-watch:
-	./node_modules/.bin/tsc -w
+	./node_modules/.bin/tsc -w --passWithNoTests
 
 test:
 	./node_modules/.bin/jest
