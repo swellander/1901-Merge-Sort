@@ -1,5 +1,6 @@
 const mergeSort = require('../src/index');
 
+// We could have done meaningful tests of the helper funcs
 describe('MergeSort', () => {
   test('is a function', () => {
     expect(typeof mergeSort).toBe('function');
@@ -16,4 +17,8 @@ describe('MergeSort', () => {
 
     expect(mergeSort(unsortedNums)).toEqual(sortedNums);
   });
+
+  test('sorts an array of strings', () => {
+    expect(mergeSort(['c', 'a', 'b'])).toEqual(['a', 'b', 'c']);
+  })
 });

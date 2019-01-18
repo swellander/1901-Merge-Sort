@@ -4,8 +4,7 @@ const merge = (left, right) => {
     if (left[0] <= right[0]) mergedNumbers.push(left.shift());
     else mergedNumbers.push(right.shift());
   }
-  const mergedResult = mergedNumbers.concat(left).concat(right);
-  return mergedResult;
+  return mergedNumbers.concat(left).concat(right);
 };
 const split = numbers => ({
   left: numbers.slice(0, Math.floor(numbers.length / 2)),
