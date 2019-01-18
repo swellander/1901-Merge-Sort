@@ -11,7 +11,8 @@
     "lib": [ "es2015", "dom" ],
     "preserveConstEnums": true,
     "baseUrl": ".",
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "paths": {
       "*": [
         "*"
