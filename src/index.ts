@@ -1,4 +1,4 @@
-type Split = (numbers: number[]) => { left: number[], right: number[] };
+type Split = (numbers: number[]) => { left: number[]; right: number[] };
 const split: Split = numbers => ({
   left: numbers.slice(0, Math.ceil(numbers.length / 2)),
   right: numbers.slice(Math.ceil(numbers.length / 2)),

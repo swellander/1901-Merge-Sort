@@ -1,3 +1,7 @@
+const split = numbers => ({
+  left: numbers.slice(0, Math.ceil(numbers.length / 2)),
+  right: numbers.slice(Math.ceil(numbers.length / 2)),
+});
 const merge = (left, right) => {
   const mergedNumbers = [];
   while (left.length && right.length) {
@@ -6,13 +10,12 @@ const merge = (left, right) => {
   }
   return mergedNumbers.concat(left).concat(right);
 };
-const split = numbers => ({
-  left: numbers.slice(0, Math.floor(numbers.length / 2)),
-  right: numbers.slice(Math.floor(numbers.length / 2)),
-});
 const mergeSort = (numbers = []) => {
+  // Base Case
   if (numbers.length <= 1) return numbers;
+  // Splitting
   const { left, right } = split(numbers);
+  // Merging - Sorting
   return merge(mergeSort(left), mergeSort(right));
 };
 module.exports = mergeSort;
